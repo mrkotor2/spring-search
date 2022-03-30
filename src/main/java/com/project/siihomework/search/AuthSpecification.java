@@ -1,9 +1,7 @@
 package com.project.siihomework.search;
 
 import com.project.siihomework.model.Auth;
-import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.springframework.data.jpa.domain.Specification;
 
@@ -12,24 +10,14 @@ import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Root;
 
-//@NoArgsConstructor
 @Setter
 @Getter
 public class AuthSpecification implements Specification<Auth> {
 
     private SearchCriteria criteria;
 
-//    public AuthSpecification(final SpecSearchCriteria criteria) {
-//        super();
-//        this.criteria = criteria;
-//    }
-
     public AuthSpecification(SearchCriteria searchCriteria) {
         this.criteria = searchCriteria;
-    }
-
-    public SearchCriteria getCriteria() {
-        return criteria;
     }
 
     @Override

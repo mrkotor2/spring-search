@@ -3,7 +3,7 @@ package com.project.siihomework.translator;
 import com.project.siihomework.dto.AuthDto;
 import com.project.siihomework.model.Auth;
 
-public class AuthTranslator {
+public class AuthTranslator { //@TODO
 
     public void toDto (Auth source, AuthDto destination){
         destination.setId(source.getId());
